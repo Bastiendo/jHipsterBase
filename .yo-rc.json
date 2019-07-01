@@ -35,6 +35,6 @@
     "otherModules": [],
     "enableTranslation": true,
     "nativeLanguage": "et",
-    "languages": ["et", "al"]
+    "languages": ["et", "al", "fr"]
   }
 }

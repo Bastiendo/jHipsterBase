@@ -20,6 +20,8 @@ import { MyfirstappEntityModule } from './entities/entity.module';
 import * as moment from 'moment';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
+import { MonPremierPersoComponent } from './mon-premier-perso/mon-premier-perso.component';
+import { PAppareilComponent } from './pappareil/pappareil.component';
 
 @NgModule({
   imports: [
@@ -40,7 +42,16 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
     MyfirstappEntityModule,
     MyfirstappAppRoutingModule
   ],
-  declarations: [JhiMainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
+  declarations: [
+    JhiMainComponent,
+    NavbarComponent,
+    ErrorComponent,
+    PageRibbonComponent,
+    ActiveMenuDirective,
+    FooterComponent,
+    MonPremierPersoComponent,
+    PAppareilComponent
+  ],
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
