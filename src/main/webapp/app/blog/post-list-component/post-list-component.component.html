@@ -1,0 +1,12 @@
+<li class="list-group-item" [ngStyle]="{backgroundColor:getColor()}">
+
+<div class="container">
+    <strong> {{title}}</strong>
+    <p> {{content}}  </p>
+        <span class="text-right"> {{created_at | date:'short'}}</span>
+        <span> nombre de like : {{loveIts}}</span>
+
+    <button class="btn btn-success" (click)="upLoveIts()">Love it</button>
+    <button class="btn btn-danger" (click)="downLoveIts()"> Down it</button>
+</div>
+</li>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'jhi-pappareil',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pappareil.component.scss']
 })
 export class PAppareilComponent implements OnInit {
-  appareilName: string = 'Machine à laver';
+  @Input() appareilName: string; // = 'Machine à laver';
   appareilStatus: string = 'éteint';
 
   constructor() {}

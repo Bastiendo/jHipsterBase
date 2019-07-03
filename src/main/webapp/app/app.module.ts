@@ -22,6 +22,8 @@ import * as moment from 'moment';
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
 import { MonPremierPersoComponent } from './mon-premier-perso/mon-premier-perso.component';
 import { PAppareilComponent } from './pappareil/pappareil.component';
+import { BlogComponent } from './blog/blog.component';
+import { PostListComponentComponent } from './blog/post-list-component/post-list-component.component';
 
 @NgModule({
   imports: [
@@ -50,7 +52,9 @@ import { PAppareilComponent } from './pappareil/pappareil.component';
     ActiveMenuDirective,
     FooterComponent,
     MonPremierPersoComponent,
-    PAppareilComponent
+    PAppareilComponent,
+    BlogComponent,
+    PostListComponentComponent
   ],
   providers: [
     {

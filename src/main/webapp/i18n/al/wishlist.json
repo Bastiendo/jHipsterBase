@@ -1,0 +1,23 @@
+{
+  "myfirstappApp": {
+    "wishlist": {
+      "home": {
+        "title": "Wishlists",
+        "createLabel": "Krijo një të ri Wishlist",
+        "createOrEditLabel": "Krijo ose përpuno një Wishlist",
+        "notFound": "No Wishlist found"
+      },
+      "created": "Një Wishlist i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Wishlist u përpunua me identifikues {{ param }}",
+      "deleted": "Një Wishlist u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Wishlist {{ id }}?"
+      },
+      "detail": {
+        "title": "Wishlist"
+      },
+      "name": "Name",
+      "date": "Date"
+    }
+  }
+}

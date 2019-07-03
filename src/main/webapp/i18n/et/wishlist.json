@@ -1,0 +1,23 @@
+{
+  "myfirstappApp": {
+    "wishlist": {
+      "home": {
+        "title": "Wishlists",
+        "createLabel": "Lisa uus Wishlist",
+        "createOrEditLabel": "Lisa või muuda Wishlist",
+        "notFound": "No Wishlist found"
+      },
+      "created": "Uus Wishlist on loodud identifikaatoriga {{ param }}",
+      "updated": "Wishlist identifikaatoriga {{ param }} on muudetud",
+      "deleted": "Wishlist identifikaatoriga {{ param }} on kustutatud",
+      "delete": {
+        "question": "Kas olete kindel, et soovite kustutada Wishlist {{ id }}?"
+      },
+      "detail": {
+        "title": "Wishlist"
+      },
+      "name": "Name",
+      "date": "Date"
+    }
+  }
+}
