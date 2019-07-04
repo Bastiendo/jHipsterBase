@@ -24,6 +24,11 @@ import { MonPremierPersoComponent } from './mon-premier-perso/mon-premier-perso.
 import { PAppareilComponent } from './pappareil/pappareil.component';
 import { BlogComponent } from './blog/blog.component';
 import { PostListComponentComponent } from './blog/post-list-component/post-list-component.component';
+import { SingleAppareilComponent } from './single-appareil/single-appareil.component';
+import { AppareilViewComponentComponent } from './appareil-view-component/appareil-view-component.component';
+import { EditAppareilComponent } from './edit-appareil/edit-appareil.component';
+import { AppareilService } from 'app/_services/appareil.service';
+import { UserService } from 'app/_services/user.service';
 
 @NgModule({
   imports: [
@@ -54,7 +59,10 @@ import { PostListComponentComponent } from './blog/post-list-component/post-list
     MonPremierPersoComponent,
     PAppareilComponent,
     BlogComponent,
-    PostListComponentComponent
+    PostListComponentComponent,
+    SingleAppareilComponent,
+    AppareilViewComponentComponent,
+    EditAppareilComponent
   ],
   providers: [
     {
@@ -76,7 +84,9 @@ import { PostListComponentComponent } from './blog/post-list-component/post-list
       provide: HTTP_INTERCEPTORS,
       useClass: NotificationInterceptor,
       multi: true
-    }
+    },
+    AppareilService,
+    UserService
   ],
   bootstrap: [JhiMainComponent]
 })
