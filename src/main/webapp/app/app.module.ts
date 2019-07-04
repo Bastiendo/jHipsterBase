@@ -29,6 +29,8 @@ import { AppareilViewComponentComponent } from './appareil-view-component/appare
 import { EditAppareilComponent } from './edit-appareil/edit-appareil.component';
 import { AppareilService } from 'app/_services/appareil.service';
 import { UserService } from 'app/_services/user.service';
+import { UserListComponent } from './user-list/user-list.component';
+import { NewUserComponent } from './new-user/new-user.component';
 
 @NgModule({
   imports: [
@@ -62,7 +64,9 @@ import { UserService } from 'app/_services/user.service';
     PostListComponentComponent,
     SingleAppareilComponent,
     AppareilViewComponentComponent,
-    EditAppareilComponent
+    EditAppareilComponent,
+    UserListComponent,
+    NewUserComponent
   ],
   providers: [
     {
