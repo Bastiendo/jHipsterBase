@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { PostService } from 'app/entities/post';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'jhi-post-list-component',
@@ -6,11 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./post-list-component.component.scss']
 })
 export class PostListComponentComponent implements OnInit {
+  @Input() id: number;
   @Input() title: string;
   @Input() content: string;
   @Input() loveIts: number;
   @Input() created_at: Date;
-  constructor() {}
+  constructor(private postService: PostService, private router: Router) {}
 
   ngOnInit() {}
 
@@ -25,5 +28,18 @@ export class PostListComponentComponent implements OnInit {
     if (this.loveIts > 0) return 'green';
     else if (this.loveIts < 0) return 'red';
     else return 'white';
+  }
+
+  deletePost(id: number) {
+    console.log('id post : ' + id);
+    this.postService.delete(id).subscribe(
+      response => {
+        console.log(response);
+        this.router.navigate(['/blog']);
+      },
+      error => {
+        console.log('erreur' + error);
+      }
+    );
   }
 }

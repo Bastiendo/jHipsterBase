@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostService } from 'app/entities/post';
 
 @Component({
   selector: 'jhi-blog',
@@ -30,7 +31,21 @@ export class BlogComponent implements OnInit {
     }
   ];
 
-  constructor() {}
+  postsEntites = [];
+
+  constructor(private postService: PostService) {}
 
   ngOnInit() {}
+
+  onFetch() {
+    this.postService.query().subscribe(
+      response => {
+        console.log(response);
+        this.postsEntites = response.body;
+      },
+      error => {
+        console.log('erreur' + error);
+      }
+    );
+  }
 }

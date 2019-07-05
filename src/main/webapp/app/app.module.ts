@@ -20,7 +20,6 @@ import { MyfirstappEntityModule } from './entities/entity.module';
 import * as moment from 'moment';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
-import { MonPremierPersoComponent } from './mon-premier-perso/mon-premier-perso.component';
 import { PAppareilComponent } from './pappareil/pappareil.component';
 import { BlogComponent } from './blog/blog.component';
 import { PostListComponentComponent } from './blog/post-list-component/post-list-component.component';
@@ -31,6 +30,7 @@ import { AppareilService } from 'app/_services/appareil.service';
 import { UserService } from 'app/_services/user.service';
 import { UserListComponent } from './user-list/user-list.component';
 import { NewUserComponent } from './new-user/new-user.component';
+//import {PostService, PostUpdateComponent} from "app/entities/post";
 
 @NgModule({
   imports: [
@@ -58,7 +58,6 @@ import { NewUserComponent } from './new-user/new-user.component';
     PageRibbonComponent,
     ActiveMenuDirective,
     FooterComponent,
-    MonPremierPersoComponent,
     PAppareilComponent,
     BlogComponent,
     PostListComponentComponent,
@@ -67,6 +66,7 @@ import { NewUserComponent } from './new-user/new-user.component';
     EditAppareilComponent,
     UserListComponent,
     NewUserComponent
+    //PostUpdateComponent
   ],
   providers: [
     {
@@ -91,6 +91,7 @@ import { NewUserComponent } from './new-user/new-user.component';
     },
     AppareilService,
     UserService
+    //PostService
   ],
   bootstrap: [JhiMainComponent]
 })

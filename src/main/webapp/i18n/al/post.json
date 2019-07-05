@@ -1,0 +1,25 @@
+{
+  "myfirstappApp": {
+    "post": {
+      "home": {
+        "title": "Posts",
+        "createLabel": "Krijo një të ri Post",
+        "createOrEditLabel": "Krijo ose përpuno një Post",
+        "notFound": "No Post found"
+      },
+      "created": "Një Post i ri u krijua me identifikues {{ param }}",
+      "updated": "Një Post u përpunua me identifikues {{ param }}",
+      "deleted": "Një Post u fshi me identifikues {{ param }}",
+      "delete": {
+        "question": "Jeni i sigurtë që doni të fshini Post {{ id }}?"
+      },
+      "detail": {
+        "title": "Post"
+      },
+      "title": "Title",
+      "content": "Content",
+      "date": "Date",
+      "like": "Like"
+    }
+  }
+}

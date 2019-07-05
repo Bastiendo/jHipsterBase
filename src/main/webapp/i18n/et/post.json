@@ -1,0 +1,25 @@
+{
+  "myfirstappApp": {
+    "post": {
+      "home": {
+        "title": "Posts",
+        "createLabel": "Lisa uus Post",
+        "createOrEditLabel": "Lisa või muuda Post",
+        "notFound": "No Post found"
+      },
+      "created": "Uus Post on loodud identifikaatoriga {{ param }}",
+      "updated": "Post identifikaatoriga {{ param }} on muudetud",
+      "deleted": "Post identifikaatoriga {{ param }} on kustutatud",
+      "delete": {
+        "question": "Kas olete kindel, et soovite kustutada Post {{ id }}?"
+      },
+      "detail": {
+        "title": "Post"
+      },
+      "title": "Title",
+      "content": "Content",
+      "date": "Date",
+      "like": "Like"
+    }
+  }
+}

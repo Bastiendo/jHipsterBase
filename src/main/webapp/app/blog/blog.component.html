@@ -1,5 +1,5 @@
 <div>
-    <h1> Posts</h1>
+    <h1> Posts (Ecrit en dur) </h1>
     <ul class="list-group">
 
         <!--<app-posts>
@@ -12,5 +12,22 @@
                              [loveIts] = "post.loveIts">
 
     </jhi-post-list-component>
+        <div class="container">
+            <h1> Posts (Persisté dans la base) </h1>
+            <button class="btn btn-primary" (click)="onFetch()"> Charger</button>
+        </div>
+
+        <div class="container">
+            <jhi-post-list-component *ngFor="let postE of postsEntites"
+                                     [title] = "postE.title"
+                                     [content] = "postE.content"
+                                     [created_at] = "postE.date"
+                                     [loveIts] = "postE.like"
+                                        [id] = postE.id>
+
+            </jhi-post-list-component>
+        </div>
+
+        <li routerLinkActive="active"><a [routerLink]="['/post/new']" > Ajouter Post </a></li>
     </ul>
 </div>

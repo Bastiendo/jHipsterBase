@@ -1,4 +1,4 @@
-<li class="list-group-item" [ngStyle]="{backgroundColor:getColor()}">
+<li class="list-group-item post" [ngStyle]="{backgroundColor:getColor()}">
 
 <div class="container">
     <strong> {{title}}</strong>
@@ -8,5 +8,6 @@
 
     <button class="btn btn-success" (click)="upLoveIts()">Love it</button>
     <button class="btn btn-danger" (click)="downLoveIts()"> Down it</button>
+    <button *ngIf="id" class="btn btn-danger" (click)="deletePost(id)"> Supprimer</button>
 </div>
 </li>
