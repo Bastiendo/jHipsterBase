@@ -30,6 +30,15 @@ import { AppareilService } from 'app/_services/appareil.service';
 import { UserService } from 'app/_services/user.service';
 import { UserListComponent } from './user-list/user-list.component';
 import { NewUserComponent } from './new-user/new-user.component';
+import { SignupComponent } from './livre/auth/signup/signup.component';
+import { SigninComponent } from './livre/auth/signin/signin.component';
+import { BookListComponent } from './livre/book-list/book-list.component';
+import { SingleBookComponent } from './livre/book-list/single-book/single-book.component';
+import { BookFormComponent } from './livre/book-list/book-form/book-form.component';
+import { HeaderComponent } from './livre/header/header.component';
+import { AuthService } from 'app/livre/services/auth.service';
+import { AuthGuardService } from 'app/livre/services/auth-guard.service';
+import { BookService } from 'app/livre/services/book.service';
 //import {PostService, PostUpdateComponent} from "app/entities/post";
 
 @NgModule({
@@ -65,7 +74,13 @@ import { NewUserComponent } from './new-user/new-user.component';
     AppareilViewComponentComponent,
     EditAppareilComponent,
     UserListComponent,
-    NewUserComponent
+    NewUserComponent,
+    SignupComponent,
+    SigninComponent,
+    BookListComponent,
+    SingleBookComponent,
+    BookFormComponent,
+    HeaderComponent
     //PostUpdateComponent
   ],
   providers: [
@@ -90,7 +105,10 @@ import { NewUserComponent } from './new-user/new-user.component';
       multi: true
     },
     AppareilService,
-    UserService
+    UserService,
+    AuthService,
+    BookService,
+    AuthGuardService
     //PostService
   ],
   bootstrap: [JhiMainComponent]
